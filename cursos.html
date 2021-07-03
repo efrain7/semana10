@@ -7,8 +7,6 @@
 
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script src="js/jquery.min.js"></script>
-
-    <!--//theme style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript">
@@ -20,22 +18,34 @@
             window.scrollTo(0, 1);
         }
     </script>
-    <!-- start menu -->
+
     <script src="js/simpleCart.min.js">
     </script>
-    <!-- start menu -->
     <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="js/memenu.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".memenu").memenu();
         });
     </script>
-    <!-- /start menu -->
+
 </head>
 
 <body>
     <!--header-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: false,
+            });
+        });
+    </script>
+
     <div class="header-top">
         <div class="header-bottom">
             <div class="logo">
@@ -64,80 +74,44 @@
                             </div>
                         </div>
                     </li>
-                    
                     <li class="grid"><a href="noticias.html">Noticias</a></li>
 
-                    
                     <li class="grid"><a href="contacto.html">Contactos</a></li>
-                    
                 </ul>
-                
             </div>
-            <!---->
 
-            <div class="clearfix"> </div>
-            <!---->
         </div>
         <div class="clearfix"> </div>
     </div>
     <!---->
-    <div class="contact">
+    
+    <!---->
+    <script src="js/bootstrap.js">
+    </script>
+
+    <div class="items">
         <div class="container">
-            <ol class="breadcrumb">
-                <li><a href="index.html">Inicio</a></li>
-                <li class="active">Contacto</li>
-            </ol>
-            <!--start contact-->
-            <h3>Contáctanos</h3>
-            <div class="section group">
-                <div class="col-md-6 span_1_of_3">
-                    <div class="contact_info">
-                        <h4>Encuentranos Aquí</h4>
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.54012953531!2d-78.23996879176477!3d0.28179628121847233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a1590857c3d5b%3A0x1e2b75e3cac06787!2zSWx1bcOhbg!5e0!3m2!1sen!2sec!4v1625086324944!5m2!1sen!2sec"></iframe>
-                        </div>
-                    </div>
-                    <div class="company_address">
-                        <h4>Información Empresa :</h4>
-                        <p>MegaCompu</p>
-
-                        <p>Ecuador - Otavalo - Iluman</p>
-                        <p>Teléfono:(593) 945 789</p>
-
-                        <p>Correo: <a href="#">MegaCompu@gmail.com</a></p>
-                        <p>Síguenos en: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 span_2_of_3">
-                    <div class="contact-form">
-                        <form>
-                            <div>
-                                <span><label>Nombre</label></span>
-                                <span><input name="nombre" type="text" class="textbox"></span>
-                            </div>
-                            <div>
-                                <span><label>Correo Electrónico</label></span>
-                                <span><input name="correo" type="text" class="textbox"></span>
-                            </div>
-                            <div>
-                                <span><label>Teléfono</label></span>
-                                <span><input name="telefono" type="text" class="textbox"></span>
-                            </div>
-                            <div>
-                                <span><label>Mensaje </label></span>
-                                <span><textarea name="mensaje"> </textarea></span>
-                            </div>
-                            <div>
-                                <span><input type="submit" class="mybutton" value="Enviar"></span>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
+            <h6 style="text-align: center; font-size: 44px;">Curso de Programación </h4>
+                <b></b>
+            <iframe style="margin-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/7TKY-jksHRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h6 style="text-align: center; font-size: 44px;">Curso de diseño Web</h6>
+            <b></b>
+            <iframe style="margin-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/bYOjmW-740M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- segunda fila -->
+            
+            <h6 style="text-align: center; font-size: 44px;">Curso de Marketing</h6>
+            <b></b>
+            <iframe style="margin-left: 300px;" width="560" height="315" src="https://www.youtube.com/embed/V92Jx72x88c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- tercera fila -->
+            
         </div>
     </div>
+    
+    <!---->
 
+
+    <!---->
     <div class="footer">
         <div class="container">
             <div class="footer-grids">
@@ -192,6 +166,7 @@
             <div class="clearfix"></div>
         </div>
     </div>
+    <!---->
 </body>
 
 </html>
